@@ -14,20 +14,56 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+
+        <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.3.0/pure-min.css">
+        <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <script src="js/vendor/Tangle.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- TangleKit (optional)... just taken from the tangle demo page -->
+        <link rel="stylesheet" href="js/vendor/TangleKit/TangleKit.css" type="text/css">
+        <script type="text/javascript" src="js/vendor/TangleKit/mootools.js"></script>
+        <script type="text/javascript" src="js/vendor/TangleKit/sprintf.js"></script>
+        <script type="text/javascript" src="js/vendor/TangleKit/BVTouchable.js"></script>
+        <script type="text/javascript" src="js/vendor/TangleKit/TangleKit.js"></script>
+
     </head>
-    <body>
+
+    <body onload="setUpTangle();">
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
+
+        <h1>Parking Tradeoffs</h1>
+
+        <div class="pure-g-r">
+            <div class="pure-u-1-5"></div>
+            <div class="pure-u-3-5">
+                <div id="scenario">
+                    <p>If <span data-var="parking_coverage" class="TKAdjustableNumber" data-min="0" data-max="100">% of the site</span> is used for parking at a rate of $5/hr, there will be <span data-var="parking_spaces"></span> parking spaces (and <span data-var="empty_spaces"></span> of them will be empty).</p>
+
+                     <!-- 80% of the time, and revenue will be $3,000 per day. </p> -->
+
+                    <p>However, this will produce 9,713 cubic meters of polluted rainwater runoff (enough to fill 90 semi trucks).</p>
+
+                    <!--
+                    <p id="example">
+                        When you eat <span data-var="cookies" class="TKAdjustableNumber" data-min="2" data-max="100"> cookies</span>, you will consume <span data-var="calories"></span> calories.
+                    </p> -->
+                </div>
+            </div>
+            <div class="pure-u-1-5"> ... </div>
+        </div>
+
+
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>

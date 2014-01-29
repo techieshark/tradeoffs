@@ -98,7 +98,21 @@ textarea {
    ========================================================================== */
 
 
+h1 {
+    font-family: 'Oswald', Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+}
 
+@media (max-width: 758px) {
+  #prose {
+    margin: 0 5px;
+  }
+}
+
+#prose {
+
+}
 
 
 
