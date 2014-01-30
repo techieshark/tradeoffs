@@ -96,6 +96,27 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+/*
+      ,|
+     / ;
+    /  \
+   : ,'(
+   |( `.\
+   : \  `\       \.
+    \ `.         | `.
+     \  `-._     ;   \
+      \     ``-.'.. _ `._
+       `. `-.            ```-...__
+        .'`.        --..          ``-..____
+      ,'.-'`,_-._            ((((   <o.   ,'
+           `' `-.)``-._-...__````  ____.-'
+        SSt    ,'    _,'.--,---------'
+           _.-' _..-'   ),'
+          ``--''        `
+
+*/
+
+
 
 
 h1 {
@@ -105,16 +126,51 @@ h1 {
 }
 
 @media (max-width: 758px) {
-  #scenario {
-    margin: 0 5px;
-  }
-}
-
-#scenario {
-
+    .pure-g-r {
+        margin: 0 5px;
+    }
 }
 
 
+#img-slider {
+    /*width: 100%;*/
+    position: relative;
+}
+
+#img-slider .left {
+    position: absolute;
+    float: right;
+    width: 100%;
+    /*background: blue;*/
+
+}
+
+#img-slider .right {
+    position: absolute; /* clip only works for absolutely positioned elements */
+    float: right;
+    width: 100%;
+    /*right: 0;*/
+    clip: rect(0, 1000px, 1000px, 200px); /* top, right, bottom, left */
+
+}
+
+/* these may already be set */
+/*
+#img-slider .left img {
+    max-width: 100%;
+    height: auto;
+
+}
+#img-slider .right img {
+    max-width: 100%;
+    height: auto;
+}
+*/
+/*
+I have a container whose ratio . It has two children, a left box and a right box.
+
+
+ */
 
 
 
