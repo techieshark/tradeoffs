@@ -22,6 +22,17 @@ function setUpTangle () {
                 console.log("But there may be as many as " + Math.abs(this.empty_spaces) + " angry neighbors.");
                 this.empty_spaces = 0;
             }
+
+            /* Update the percentage of each image shown based on the parking_coverage % chosen by user. */
+            /*
+                | ----------------------------- 100 % ------------------------------- |
+                | ------- parking_coverage% ---   |   ---------  Park Img  ---------- |
+                | ------------------------------------------------------------------- |
+            */
+            var width = $("#img-slider .right img").width();
+            var left = (this.parking_coverage/100 * width);
+            $("#img-slider .right").css("clip", "rect(0, 1000px, 1000px, " + left + "px)"); /* top, right, bottom, left */
+
         }
     });
 }
