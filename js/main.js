@@ -19,7 +19,7 @@ function setUpTangle () {
         
 
             if (this.empty_spaces < 0) {
-                console.log("But there may be as many as ".concat(Math.abs(this.empty_spaces)).concat(" angry neighbors."));
+                console.log("But there may be as many as " + Math.abs(this.empty_spaces) + " angry neighbors.");
                 this.empty_spaces = 0;
             }
         }
