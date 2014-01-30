@@ -15,12 +15,20 @@ function setUpTangle () {
         update: function () {
             this.parking_spaces = Math.floor((this.parking_coverage / 100) * this.acres * this.spaces_per_acre);
             this.empty_spaces = this.parking_spaces - this.parking_demand;
-            this.angry_mjs = Math.floor(this.parking_spaces + Math.exp(1/this.parking_spaces));
 
 
             if (this.empty_spaces < 0) {
+                this.banana_merchants = Math.abs(this.empty_spaces);
+                this.angry_mjs = "few";     
                 console.log("But there may be as many as " + Math.abs(this.empty_spaces) + " angry neighbors.");
                 this.empty_spaces = 0;
+            }
+
+            else
+            {
+              this.banana_merchants = "no";
+               this.angry_mjs = this.parking_spaces;
+
             }
 
             /* Update the percentage of each image shown based on the parking_coverage % chosen by user. */
