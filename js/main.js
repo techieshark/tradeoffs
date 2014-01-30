@@ -10,7 +10,7 @@ function setUpTangle () {
 
             this.parking_demand = 25; // max number of spaces needed. Based on observation.
             // editable (see update function):
-            this.parking_coverage = 0; // % of site covered with parking
+            this.parking_coverage = 100; // % of site covered with parking
         },
         update: function () {
             this.parking_spaces = Math.floor((this.parking_coverage / 100) * this.acres * this.spaces_per_acre);
