@@ -16,7 +16,7 @@ function setUpTangle () {
             this.parking_spaces = Math.floor((this.parking_coverage / 100) * this.acres * this.spaces_per_acre);
             this.empty_spaces = this.parking_spaces - this.parking_demand;
             this.angry_mjs = Math.floor(this.parking_spaces + Math.exp(1/this.parking_spaces));
-        
+
 
             if (this.empty_spaces < 0) {
                 console.log("But there may be as many as " + Math.abs(this.empty_spaces) + " angry neighbors.");
