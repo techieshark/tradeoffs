@@ -136,6 +136,9 @@ h1 {
     }
 }
 
+#scenario span.var {
+    background-color: #ffc966; /* light orange */
+}
 
 #img-slider {
     /*width: 100%;*/
